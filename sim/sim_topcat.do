@@ -1,5 +1,5 @@
-#rm -rf work
-#vdel -all -lib work
+rm -rf work
+vdel -all -lib work
 vlib work
 vcom -O5 +acc=prn rtl/videoram.vhd rtl/topcat.vhd sim/tb_topcat.vhd
 vsim work.tb_topcat

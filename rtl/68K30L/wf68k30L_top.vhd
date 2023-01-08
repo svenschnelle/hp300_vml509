@@ -448,7 +448,7 @@ signal VBR                      : std_logic_vector(31 downto 0);
 signal VBR_WR                   : bit;
 signal VBR_RD                   : bit;
 signal CAAR                     : std_logic_vector(31 downto 0);
-signal CACR                     : std_logic_vector(31 downto 0);
+signal CACR                     : std_logic_vector(31 downto 0) := (others => '0');
 signal CACR_WR                  : bit;
 signal CACR_RD                  : bit;
 signal CAAR_WR                  : bit;

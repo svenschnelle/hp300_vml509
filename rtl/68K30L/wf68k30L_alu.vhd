@@ -156,9 +156,9 @@ signal SHFT_LOAD            : bit;
 signal SHFT_RDY             : bit;
 signal SHFT_EN              : bit;
 signal STATUS_REG           : Std_Logic_Vector(15 downto 0);
-signal VFLAG_DIV            : std_logic;
+signal VFLAG_DIV            : std_logic := '0';
 signal XFLAG_SHFT           : std_logic;
-signal XNZVC                : Std_Logic_Vector(4 downto 0);
+signal XNZVC                : Std_Logic_Vector(4 downto 0) := (others => '0');
 begin
     PARAMETER_BUFFER: process
     begin
@@ -428,12 +428,12 @@ begin
 
     DIVISION: process
     variable BITCNT         : integer range 0 to 64;
-    variable DIVIDEND       : unsigned(63 downto 0);
-    variable DIVISOR        : unsigned(31 downto 0);
-    variable QUOTIENT_REST  : unsigned(31 downto 0);
-    variable QUOTIENT_VAR   : unsigned(31 downto 0);
-    variable REMAINDER_REST : unsigned(31 downto 0);
-    variable REMAINDER_VAR  : unsigned(31 downto 0);
+    variable DIVIDEND       : unsigned(63 downto 0) := (others => '0');
+    variable DIVISOR        : unsigned(31 downto 0) := (others => '0');
+    variable QUOTIENT_REST  : unsigned(31 downto 0) := (others => '0');
+    variable QUOTIENT_VAR   : unsigned(31 downto 0) := (others => '0');
+    variable REMAINDER_REST : unsigned(31 downto 0) := (others => '0');
+    variable REMAINDER_VAR  : unsigned(31 downto 0) := (others => '0');
     -- Be aware, that the destination and source operands
     -- may be reloaded during the division operation. For
     -- this, we use the restore values in case of an overflow.

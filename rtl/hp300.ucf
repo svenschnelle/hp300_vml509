@@ -19,152 +19,32 @@ NET  clk_i       LOC="AH17";  # 33MHz, Bank 4, Vcco=3.3V, No DCI
 # NET  CPU_TDO              LOC="E7";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors      
 # NET  CPU_TMS              LOC="U10";   # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors      
 # NET  CPU_TRST             LOC="V10";   # Bank 18, Vcco=3.3V, No DCI      
-# NET  DDR2_A0              LOC="L30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A1              LOC="M30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A2              LOC="N29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A3              LOC="P29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A4              LOC="K31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A5              LOC="L31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A6              LOC="P31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A7              LOC="P30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A8              LOC="M31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A9              LOC="R28";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_A10             LOC="J31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A11             LOC="R29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A12             LOC="T31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_A13             LOC="H29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors      
-# NET  DDR2_BA0             LOC="G31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_BA1             LOC="J30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_BA2             LOC="R31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CAS_B           LOC="E31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CKE0            LOC="T28";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CKE1            LOC="U30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CLK0_N          LOC="AJ29";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CLK0_P          LOC="AK29";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CLK1_N          LOC="F28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CLK1_P          LOC="E28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CS0_B           LOC="L29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_CS1_B           LOC="J29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D0              LOC="AF30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D1              LOC="AK31";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D2              LOC="AF31";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D3              LOC="AD30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D4              LOC="AJ30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D5              LOC="AF29";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D6              LOC="AD29";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D7              LOC="AE29";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D8              LOC="AH27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D9              LOC="AF28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D10             LOC="AH28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D11             LOC="AA28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D12             LOC="AG25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D13             LOC="AJ26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D14             LOC="AG28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D15             LOC="AB28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D16             LOC="AC28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D17             LOC="AB25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D18             LOC="AC27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D19             LOC="AA26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D20             LOC="AB26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D21             LOC="AA24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D22             LOC="AB27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D23             LOC="AA25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D24             LOC="AC29";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D25             LOC="AB30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D26             LOC="W31";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D27             LOC="V30";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D28             LOC="AC30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D29             LOC="W29";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D30             LOC="V27";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D31             LOC="W27";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D32             LOC="V29";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D33             LOC="Y27";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D34             LOC="Y26";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D35             LOC="W24";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D36             LOC="V28";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D37             LOC="W25";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D38             LOC="W26";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D39             LOC="V24";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D40             LOC="R24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D41             LOC="P25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D42             LOC="N24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D43             LOC="P26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D44             LOC="T24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D45             LOC="N25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D46             LOC="P27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D47             LOC="N28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D48             LOC="M28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D49             LOC="L28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D50             LOC="F25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D51             LOC="H25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D52             LOC="K27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D53             LOC="K28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D54             LOC="H24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D55             LOC="G26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D56             LOC="G25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D57             LOC="M26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D58             LOC="J24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D59             LOC="L26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D60             LOC="J27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D61             LOC="M25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D62             LOC="L25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_D63             LOC="L24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM0             LOC="AJ31";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM1             LOC="AE28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM2             LOC="Y24";   # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM3             LOC="Y31";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM4             LOC="V25";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM5             LOC="P24";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM6             LOC="F26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DM7             LOC="J25";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS0_N          LOC="AA30";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS0_P          LOC="AA29";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS1_N          LOC="AK27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS1_P          LOC="AK28";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS2_N          LOC="AJ27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS2_P          LOC="AK26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS3_N          LOC="AA31";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS3_P          LOC="AB31";  # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS4_N          LOC="Y29";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS4_P          LOC="Y28";   # Bank 17, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS5_N          LOC="E27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS5_P          LOC="E26";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS6_N          LOC="G28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS6_P          LOC="H28";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS7_N          LOC="H27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_DQS7_P          LOC="G27";   # Bank 19, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_ODT0            LOC="F31";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_ODT1            LOC="F30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_RAS_B           LOC="H30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_SCL             LOC="E29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_SDA             LOC="F29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DDR2_WE_B            LOC="K29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DVI_D0               LOC="AB8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D1               LOC="AC8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D2               LOC="AN12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D3               LOC="AP12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D4               LOC="AA9";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D5               LOC="AA8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D6               LOC="AM13";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D7               LOC="AN13";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D8               LOC="AA10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D9               LOC="AB10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D10              LOC="AP14";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_D11              LOC="AN14";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_DE               LOC="AE8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_GPIO1            LOC="N30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  DVI_H                LOC="AM12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_RESET_B          LOC="AK6";   # Bank 18, Vcco=3.3V, No DCI
-# NET  DVI_V                LOC="AM11";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_XCLK_N           LOC="AL10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  DVI_XCLK_P           LOC="AL11";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<0>               LOC="AB8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<1>               LOC="AC8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<2>               LOC="AN12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<3>               LOC="AP12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<4>               LOC="AA9";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<5>               LOC="AA8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<6>               LOC="AM13";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<7>               LOC="AN13";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<8>               LOC="AA10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<9>               LOC="AB10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<10>              LOC="AP14";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_D<11>              LOC="AN14";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_DE                 LOC="AE8";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+#NET  DVI_GPIO1              LOC="N30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  DVI_H                  LOC="AM12";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_RESET_B            LOC="AK6";   # Bank 18, Vcco=3.3V, No DCI
+NET  DVI_V                  LOC="AM11";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_XCLK_N             LOC="AL10";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  DVI_XCLK_P             LOC="AL11";  # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  FAN_ALERT_B          LOC="T30";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  FLASH_ADV_B          LOC="F13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  FLASH_ADV_B          LOC="F13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  FLASH_AUDIO_RESET_B  LOC="AG17";  # Bank 4, Vcco=3.3V, No DCI
-# NET  FLASH_CE_B           LOC="AE14";  # Bank 2, Vcco=3.3V
-# NET  FLASH_CLK            LOC="N9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  FLASH_OE_B           LOC="AF14";  # Bank 2, Vcco=3.3V
-# NET  FLASH_WAIT           LOC="G13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  FLASH_CE_B             LOC="AE14";  # Bank 2, Vcco=3.3V
+NET  FLASH_CLK              LOC="N9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  FLASH_OE_B             LOC="AF14";  # Bank 2, Vcco=3.3V
+# NET  FLASH_WAIT             LOC="G13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  FPGA_AVDD            LOC="T18";   # Bank 0, Vcco=3.3V
 # NET  FPGA_CCLK-R          LOC="N15";   # Bank 0, Vcco=3.3V
 # NET  FPGA_CPU_RESET_B     LOC="E9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
@@ -213,26 +93,26 @@ NET  clk_i       LOC="AH17";  # 33MHz, Bank 4, Vcco=3.3V, No DCI
 # NET  FPGA_VRP_B20         LOC="L11";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  FPGA_VRP_B21         LOC="AH25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
 # NET  FPGA_VRP_B22         LOC="AE9";   # Bank 22, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW1         LOC="U25";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW2         LOC="AG27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW3         LOC="AF25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW4         LOC="AF26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW5         LOC="AE27";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW6         LOC="AE26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW7         LOC="AC25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  GPIO_DIP_SW8         LOC="AC24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-NET  LED<0>           LOC="H18";   # Bank 3, Vcco=2.5V, No DCI
-NET  LED<1>           LOC="L18";   # Bank 3, Vcco=2.5V, No DCI
-NET  LED<2>           LOC="G15";   # Bank 3, Vcco=2.5V, No DCI
-NET  LED<3>           LOC="AD26";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-NET  LED<4>           LOC="G16";   # Bank 3, Vcco=2.5V, No DCI
-NET  LED<5>           LOC="AD25";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-NET  LED<6>           LOC="AD24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
-NET  LED<7>           LOC="AE24";  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<0>         LOC="U25"  | IOSTANDARD = LVCMOS18;   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<1>         LOC="AG27" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<2>         LOC="AF25" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<3>         LOC="AF26" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<4>         LOC="AE27" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<5>         LOC="AE26" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<6>         LOC="AC25" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  GPIO_DIP_SW<7>         LOC="AC24" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  LED<0>                 LOC="H18"  | IOSTANDARD = LVCMOS18;  # Bank 3, Vcco=2.5V, No DCI
+NET  LED<1>                 LOC="L18"  | IOSTANDARD = LVCMOS18;  # Bank 3, Vcco=2.5V, No DCI
+NET  LED<2>                 LOC="G15"  | IOSTANDARD = LVCMOS18;  # Bank 3, Vcco=2.5V, No DCI
+NET  LED<3>                 LOC="AD26" | IOSTANDARD = LVCMOS18; # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  LED<4>                 LOC="G16"  | IOSTANDARD = LVCMOS18;  # Bank 3, Vcco=2.5V, No DCI
+NET  LED<5>                 LOC="AD25" | IOSTANDARD = LVCMOS18;  # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  LED<6>                 LOC="AD24" | IOSTANDARD = LVCMOS18; # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  LED<7>                 LOC="AE24" | IOSTANDARD = LVCMOS18; # Bank 21, Vcco=1.8V, DCI using 49.9 ohm resistors
 # NET  GPIO_LED_C           LOC="E8";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  GPIO_LED_E           LOC="AG23";  # Bank 2, Vcco=3.3V
 # NET  GPIO_LED_N           LOC="AF13";  # Bank 2, Vcco=3.3V
-# NET  GPIO_LED_S           LOC="AG12";  # Bank 2, Vcco=3.3V
+NET  DDR2_INIT_DONE_LED_O           LOC="AG12";  # Bank 2, Vcco=3.3V
 # NET  GPIO_LED_W           LOC="AF23";  # Bank 2, Vcco=3.3V
 NET reset_sw_i              LOC="AJ6";   # Bank 18, Vcco=3.3V, No DCI
 # NET  GPIO_SW_E            LOC="AK7";   # Bank 18, Vcco=3.3V, No DCI
@@ -305,12 +185,12 @@ NET reset_sw_i              LOC="AJ6";   # Bank 18, Vcco=3.3V, No DCI
 # NET  HDR2_64_SM_9_P       LOC="AN32";  # Bank 13, Vcco=2.5V or 3.3V user selectable by J20
 # NET  IIC_SCL_MAIN         LOC="F9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  IIC_SCL_SFP          LOC="R26";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  IIC_SCL_VIDEO        LOC="U27";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  IIC_SCL_VIDEO          LOC="U27" | IOSTANDARD = LVCMOS18;  # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
 # NET  IIC_SDA_MAIN         LOC="F8";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  IIC_SDA_SFP          LOC="U28";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  IIC_SDA_VIDEO        LOC="T29";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  KEYBOARD_CLK         LOC="T26";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
-# NET  KEYBOARD_DATA        LOC="T25";   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  IIC_SDA_VIDEO          LOC="T29" | IOSTANDARD = LVCMOS18;  # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  ps2_clk_i              LOC="T26" | IOSTANDARD = LVCMOS18;   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
+NET  ps2_data_i             LOC="T25" | IOSTANDARD = LVCMOS18;   # Bank 15, Vcco=1.8V, DCI using 49.9 ohm resistors
 # NET  LCD_FPGA_DB4         LOC="T9";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  LCD_FPGA_DB5         LOC="G7";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  LCD_FPGA_DB6         LOC="G6";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
@@ -425,47 +305,47 @@ NET reset_sw_i              LOC="AJ6";   # Bank 18, Vcco=3.3V, No DCI
 # NET  SRAM_DQP1            LOC="C12";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  SRAM_DQP2            LOC="H10";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  SRAM_DQP3            LOC="H9";    # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  SRAM_FLASH_A0        LOC="K12";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A1        LOC="K13";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A2        LOC="H23";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A3        LOC="G23";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A4        LOC="H12";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A5        LOC="J12";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A6        LOC="K22";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A7        LOC="K23";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A8        LOC="K14";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A9        LOC="L14";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A10       LOC="H22";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A11       LOC="G22";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A12       LOC="J15";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A13       LOC="K16";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A14       LOC="K21";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A15       LOC="J22";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A16       LOC="L16";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A17       LOC="L15";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A18       LOC="L20";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A19       LOC="L21";   # Bank 1, Vcco=3.3V
-# NET  SRAM_FLASH_A20       LOC="AE23";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_A21       LOC="AE22";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D0        LOC="AD19";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D1        LOC="AE19";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D2        LOC="AE17";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D3        LOC="AF16";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D4        LOC="AD20";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D5        LOC="AE21";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D6        LOC="AE16";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D7        LOC="AF15";  # Bank 2, Vcco=3.3V
-# NET  SRAM_FLASH_D8        LOC="AH13";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D9        LOC="AH14";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D10       LOC="AH19";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D11       LOC="AH20";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D12       LOC="AG13";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D13       LOC="AH12";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D14       LOC="AH22";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_D15       LOC="AG22";  # Bank 4, Vcco=3.3V, No DCI
-# NET  SRAM_FLASH_WE_B      LOC="AF20";  # Bank 2, Vcco=3.3V
-# NET  SRAM_MODE            LOC="A13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  SRAM_OE_B            LOC="B12";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  SRAM_FLASH_A<0>        LOC="K12";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<1>        LOC="K13";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<2>        LOC="H23";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<3>        LOC="G23";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<4>        LOC="H12";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<5>        LOC="J12";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<6>        LOC="K22";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<7>        LOC="K23";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<8>        LOC="K14";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<9>        LOC="L14";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<10>       LOC="H22";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<11>       LOC="G22";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<12>       LOC="J15";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<13>       LOC="K16";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<14>       LOC="K21";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<15>       LOC="J22";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<16>       LOC="L16";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<17>       LOC="L15";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<18>       LOC="L20";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<19>       LOC="L21";   # Bank 1, Vcco=3.3V
+NET  SRAM_FLASH_A<20>       LOC="AE23";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_A<21>       LOC="AE22";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<0>        LOC="AD19";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<1>        LOC="AE19";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<2>        LOC="AE17";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<3>        LOC="AF16";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<4>        LOC="AD20";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<5>        LOC="AE21";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<6>        LOC="AE16";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<7>        LOC="AF15";  # Bank 2, Vcco=3.3V
+NET  SRAM_FLASH_D<8>        LOC="AH13";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<9>        LOC="AH14";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<10>       LOC="AH19";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<11>       LOC="AH20";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<12>       LOC="AG13";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<13>       LOC="AH12";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<14>       LOC="AH22";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_D<15>       LOC="AG22";  # Bank 4, Vcco=3.3V, No DCI
+NET  SRAM_FLASH_WE_B      LOC="AF20";  # Bank 2, Vcco=3.3V
+NET  SRAM_MODE            LOC="A13";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
+NET  SRAM_OE_B            LOC="B12";   # Bank 20, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  SYSACE_MPA00         LOC="G5";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  SYSACE_MPA01_USB_A0  LOC="N7";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  SYSACE_MPA02_USB_A1  LOC="N5";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
@@ -506,7 +386,7 @@ NET reset_sw_i              LOC="AJ6";   # Bank 18, Vcco=3.3V, No DCI
 # NET  USB_CS_B             LOC="P10";   # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  USB_INT              LOC="F5";    # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
 # NET  USB_RESET_B          LOC="R11";   # Bank 12, Vcco=3.3V, DCI using 49.9 ohm resistors
-# NET  USER_CLK             LOC="AH15";  # Bank 4, Vcco=3.3V, No DCI
+# NET  CLK_PIXEL_I           LOC="AH15";  # Bank 4, Vcco=3.3V, No DCI (X1 crystal)
 # NET  VGA_IN_BLUE0         LOC="AC4";   # Bank 18, Vcco=3.3V, No DCI
 # NET  VGA_IN_BLUE1         LOC="AC5";   # Bank 18, Vcco=3.3V, No DCI
 # NET  VGA_IN_BLUE2         LOC="AB6";   # Bank 18, Vcco=3.3V, No DCI

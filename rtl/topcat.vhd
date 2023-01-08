@@ -52,7 +52,6 @@ signal vc_s			: unsigned(10 downto 0);
 signal ramidx			: unsigned(19 downto 0);
 
 signal vram_write_s		: std_logic;
-signal vram_read_s		: std_logic;
 signal vram_addr_s		: std_logic_vector(19 downto 0);
 signal vram_data_in_s		: std_logic;
 signal vram_data_out_s		: std_logic;
@@ -67,14 +66,15 @@ signal wm_dst_y			: integer range 0 to 1023;
 signal wm_height		: integer range 0 to 1023;
 signal wm_width			: integer range 0 to 1023;
 signal wm_mrr			: std_logic_vector(3 downto 0);
-signal wm_read_addr_s		: integer range 0 to 1048575;
+
 signal wm_req_s			: boolean;
 signal wm_active_s		: boolean;
 signal wm_done_s		: boolean;
 signal wm_direction		: std_logic;
 
 signal wm_data_s		: std_logic;
-signal wm_write_addr_s		: integer range 0 to 1048575;
+
+signal wm_addr_s		: integer range 0 to 1048575;
 
 signal wm_start_x		: integer range 0 to 1023;
 signal wm_current_x		: integer range 0 to 1023;
@@ -85,7 +85,6 @@ signal wm_end_x			: integer range 0 to 1023;
 signal wm_end_y			: integer range 0 to 1023;
 
 signal wm_write_s		: std_logic;
-signal wm_read_s		: std_logic;
 
 signal cursor_pos_x_s		: integer range 0 to 1023;
 signal cursor_pos_y_s		: integer range 0 to 1023;
@@ -211,16 +210,13 @@ video_o <= '0' when (hblank_s = '1' or vblank_s = '1' or not display_enable) els
 
 
 vram_addr_s <= addr_i when not wm_active_s else
-		std_logic_vector(to_unsigned(wm_write_addr_s, vram_addr_s'length));
+		std_logic_vector(to_unsigned(wm_addr_s, vram_addr_s'length));
 
 vram_write_s <= '1' when wm_write_s = '1' and wm_active_s else
 		'1' when vram_cs_i = '1' and rwn_i = '0' else '0';
 
 vram_data_in_s <= wm_data_s when wm_active_s else
 		db_i(8);
-
-vram_read_s <= wm_read_s when wm_active_s else
-		'1' when vram_cs_i = '1' and rwn_i = '1' else '0';
 
 db_o <= ctl_db_s when ctl_cs_i = '1' else
 	"0000000" & vram_data_in_s &
@@ -281,14 +277,16 @@ begin
 				end if;
 
 			when ADDR =>
-				wm_read_addr_s <= (wm_current_y + wm_src_y) * 1024 + wm_src_x + wm_current_x;
-				wm_write_addr_s <=  (wm_current_y + wm_dst_y) * 1024 + wm_dst_x + wm_current_x;
-				wm_state_s <= READ;
 				wm_write_s <= '0';
-				wm_read_s <= '1';
-
+				if (wm_mrr = TOPCAT_RULE_CLEAR or wm_mrr = TOPCAT_RULE_SET) then
+					wm_addr_s <=  (wm_current_y + wm_dst_y) * 1024 + wm_dst_x + wm_current_x;
+					wm_state_s <= WRITE;
+				else
+					wm_addr_s <= (wm_current_y + wm_src_y) * 1024 + wm_src_x + wm_current_x;
+					wm_state_s <= READ;
+				end if;
 			when READ =>
-				wm_read_addr_s <= wm_write_addr_s;
+				wm_addr_s <=  (wm_current_y + wm_dst_y) * 1024 + wm_dst_x + wm_current_x;
 				wm_state_s <= WRITE0;
 
 			when WRITE0 =>
@@ -298,7 +296,6 @@ begin
 			when WRITE =>
 				wm_data_s <= prr(wm_data_latch_s, vram_data_out_s, wm_mrr);
 				wm_write_s <= '1';
-				wm_read_s <= '0';
 
 				if (wm_current_x /= wm_end_x) then
 					wm_current_x <= wm_current_x + wm_inc_x;
@@ -314,7 +311,6 @@ begin
 				end if;
 			when DONE =>
 				wm_write_s <= '0';
-				wm_read_s <= '0';
 				wm_done_s <= true;
 				wm_state_s <= IDLE;
 		end case;
@@ -409,7 +405,8 @@ begin
 			case addr_i(11 downto 0) is
 				when TOPCAT_REG_START_WMOVE =>
 					if (wm_active_s) then
-						ctl_db_s <= x"0101"; -- (plane_id => '1', plane_id-8 => '1', others =>'0');
+						ctl_db_s(plane_id) <= '1';
+						ctl_db_s(plane_id - 8) <= '1';
 					else
 						ctl_db_s <= (others => '0');
 					end if;
